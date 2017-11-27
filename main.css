@@ -1,0 +1,117 @@
+body {
+  background-color: #f3f3f3;
+}
+
+#brand {
+  font-weight: bold;
+  color: #0151AC;
+  text-shadow: 2px 1px 2px #FEFDFD, 3px 3px 1px #242424;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-family: 'Alfa Slab One', cursive;
+  margin-left: 10px;
+}
+
+#brand:hover {
+  padding:2px 8px;
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #c20101, 2px 2px 3px #D20404;
+  box-shadow: 3px 3px 3px white;
+  border-radius: 40%;
+}
+
+h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: 1px -1px 1px #fefefe, 2px -2px 2px #777777;
+}
+
+.about {
+  font-family: 'Architects Daughter', cursive;
+  margin: 5rem;
+  font-size: 1.25rem;
+}
+
+.about p {
+  margin-left: 2rem;
+
+}
+
+ul {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+.army {
+  padding: 2rem;
+}
+
+#myHeading {
+  padding-top: 0;
+  margin: 0 auto 20px auto;
+  font-size: 5rem;
+}
+
+#pushLeft {
+  margin-left: 3rem;
+  padding-top: 2rem;
+}
+
+#welcome {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.nav-item {
+  padding: 0 2.5rem 0 3rem;
+}
+
+#pushDown {
+  margin-top: 2rem;
+}
+
+.center {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footerItem {
+  margin-left: 4rem;
+  justify-content: center;
+}
+
+.footerItem:hover {
+  box-shadow: -5px 8px 10px gray;
+  border-radius: 45%;
+  padding: 0 auto 5px auto;
+}
+
+.socialMedia {
+  padding: 2rem auto 2rem auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.webDev {
+  font-size: 1.5rem
+}
+
+.carouselImg {
+  text-shadow: 1px 1px 1px black, 2px 2px 2px ghostwhite, 3px 3px 3px black;
+  font-size: 22px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pageHeader {
+  text-align: center;
+  font-weight: bold;
+  padding: 0 auto 5px auto;
+  margin: 0 auto 5px auto;
+}
+
+#carouselExampleIndicators {
+  float: none;
+  margin: 0 auto;
+}
