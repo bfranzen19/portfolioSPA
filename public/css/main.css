@@ -71,7 +71,7 @@ ul {
 .footerItem {
   margin-left: 4rem;
   justify-content: center;
-  margin: 5px auto 25px auto;
+  margin-bottom: 25px;
 }
 
 .footerItem:hover {
