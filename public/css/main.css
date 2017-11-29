@@ -1,5 +1,5 @@
 body {
-  background-color: #f3f3f3;
+  background-color: ghostwhite;
 }
 
 #brand {
@@ -10,14 +10,6 @@ body {
   font-size: 24px;
   font-family: 'Alfa Slab One', cursive;
   margin-left: 10px;
-}
-
-#brand:hover {
-  padding:2px 8px;
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #c20101, 2px 2px 3px #D20404;
-  box-shadow: 3px 3px 3px white;
-  border-radius: 40%;
 }
 
 h1 {

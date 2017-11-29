@@ -34,26 +34,31 @@ var myRouter = new VueRouter({
   routes: [
     {
       path: '/',
-      component: {
-        template: `
-        <div>
-          <img src='/img/flatties.jpg' alt='flatirons' height="400rem" width="100%" />
-            <my-heading> bt franzen </my-heading>
+      component: function(resolve, reject) {
+        $.get('/public/index.html', function(htmlFromServer) {
+          var newComp = {
+            template:
+            `<div>
+              <img src='/img/flatties.jpg' alt='flatirons' height="400rem" width="100%" />
+                <my-heading> bt franzen </my-heading>
 
-          <div class="container" id="welcome">
-            <div class="row col-xs-10">
-              welcome to my portfolio site! feel free to add me on social media, contact me, and/or see what i have been working on recently via my github account.
-            </div>
-          </div>
-        </div>
-        `,
-      }
+              <div class="container" id="welcome">
+                <div class="row col-xs-10">
+                  welcome to my portfolio site! feel free to add me on social media, contact me, and/or see what i have been working on recently via my github account.
+                </div>
+              </div>
+            </div>`,
+            htmlFromServer,
+          }
+          resolve(newComp)
+        })
+      } //z component
     },
 
     {
       path: '/about',
       component: function(resolve,reject) {
-        $.get('/about.html', function(htmlFromServer) {
+        $.get('/partials/about.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
@@ -65,7 +70,7 @@ var myRouter = new VueRouter({
     {
       path: '/webDevelopment',
       component: function(resolve,reject) {
-        $.get('/webDev.html', function(htmlFromServer) {
+        $.get('/partials/webDev.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
@@ -77,7 +82,7 @@ var myRouter = new VueRouter({
     {
       path: '/socialMedia',
       component: function(resolve,reject) {
-        $.get('/socialMedia.html', function(htmlFromServer) {
+        $.get('/partials/socialMedia.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
@@ -89,7 +94,7 @@ var myRouter = new VueRouter({
     {
       path: '/photography',
       component: function(resolve,reject) {
-        $.get('/photography.html', function(htmlFromServer) {
+        $.get('/partials/photography.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
@@ -101,7 +106,7 @@ var myRouter = new VueRouter({
     {
       path: '/theskippyproject',
       component: function(resolve,reject) {
-        $.get('/theskippyproject.html', function(htmlFromServer) {
+        $.get('/partials/theskippyproject.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
@@ -113,7 +118,7 @@ var myRouter = new VueRouter({
     {
       path: '/cartography',
       component: function(resolve,reject) {
-        $.get('/cartography.html', function(htmlFromServer) {
+        $.get('/partials/cartography.html', function(htmlFromServer) {
           var newComp = {
             template: htmlFromServer,
           }
