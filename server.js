@@ -5,6 +5,6 @@ app.use(express.static('./'))
 app.use(express.static('./public'))
 
 
-app.listen(8080, function() {
+app.listen(80, function() {
   console.log('running on 8080')
 })
