@@ -138,7 +138,7 @@ var mainVM = new Vue({
   data: {},
   methods: {
     navbarCollapse: function(event) {
-    $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){$(this).parents('.navbar-collapse').collapse('hide')
+      $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){$(this).parents('.navbar-collapse').collapse('hide')
     })
     }
   },
