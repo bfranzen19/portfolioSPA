@@ -28,6 +28,7 @@ catch(e){
     console.log('could not start HTTPS server')
     var httpServer = HTTP.createServer(app)
     httpServer.listen(80)
+    // httpServer.listen(8080)
 }
 
 /* old */
