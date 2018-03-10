@@ -19,8 +19,9 @@ h1 {
 
 .about {
   font-family: 'Architects Daughter', cursive;
-  margin: 5rem;
+  margin: 1rem 5rem 5rem 5rem;
   font-size: 1.25rem;
+  width: 100%;
 }
 
 .about p {
@@ -34,7 +35,11 @@ ul {
 }
 
 .army {
-  padding: 2rem;
+  width: 100%;
+  padding: 2rem 2rem 5rem 2rem;
+  display: block;
+  text-align: center;
+  margin: auto;
 }
 
 #myHeading {
