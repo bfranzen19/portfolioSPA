@@ -4,33 +4,557 @@
       <my-heading></my-heading>
 
         <div class="webDev">
-        <h2 class="pageHeader"> web development </h2>
-        <h4><B>projects</B></h4>
-        <ul id="pushDown">
-          <li><a href="https://btfranzen.com" target="_blank">www.btfranzen.com</a> (this site) - this is a single page application (SPA) that i created as a personal portfolio. this SPA utilizes vue router, custom components, as well as javascript, HTML, CSS, bootstrap, and expressjs.</li><br/>
-          <li><a href="https://triggeraware.com" target="_blank">www.triggeraware.com</a> - this database allows you to search by tv/movie title or trigger type to ascertain whether or not there is a risk for you or another survivor to be triggered. users can also fill out a form to recommend triggering scenes to add to the database. this application was built as my final project at CodeCraft and was built using web scraping (cheerio and request), javascript, mongoDB (using mongoose to validate data), express, fuze.js (fuzzy search JS library), bootstrap 4, CSS, HTML, bcrypt for authentication to login and verify the recommended scenes from users.</li><br/>
-          <li><a href="https://40northography.com" target="_blank">www.40northography.com</a> - i created this site, originally, as a photography portfolio but then utilized it as a way of allowing people to follow me on a month-long european backpacking trip to 13 different countries (if you count the freetown christiania in copenhagen) without needing to have membership to any social media. it allowed friends and family to know that we were safe, see some pictures, see maps of where we explored in each location (using my GPS watch), and hear a daily paragraph about our travels. it also allowed me to continue coding, maintain a website, and showcase photographs.</li><br/>
-          <li><a href="https://piratefabricator.com" target="_blank">www.piratefabricator.com</a> - this is a simple landing page for a client who is a welder and carpenter. i designed and created the logo using adobe photoshop. </li>
-        </ul><br/><br/>
+        <h2 class="pageHeader"> web development </h2><br/>
 
-        <h4><B>background</B></h4>
-        <p  id="pushDown">
-          after my time in the army, i started working in GIS and satellite imagery which pushed me to further consider a career change into web and software development. codecraft school of technology made this career change a reality for me.
-        </p>
-
-        <p id="pushDown">
-          at codecraft, i studied the javascript MEVN stack which includes mongoDB and mongoose, expressjs, vuejs, and nodejs. i also became proficient in using BASH/command line, git, github, HTML, CSS, jQuery, bootstrap, object oriented programming, and writing both front and backend code.
-        </p>
-
-        <p id="pushDown">
-          in addition to my time at codecraft, i have also taken classes in python, java, object oriented programming, software development lifecycle (SDLC), and javascript-based web mapping at the university of denver in denver, colorado.
-        </p>
-
-        <p id="pushDown">
-          please take a look at my github account to see what i've been working on and my progress throughout my time as a student at codecraft.
-        </p>
+        <div class="flex-container">
+          <p>
+            All of my websites  are built completely from scratch. These examples have all been designed, created, and maintained solely by me. All of these sites are built using MongoDB (utilizing Mongoose), Express.js, Vue.js, and Node.js and NPM as well as HTML, CSS, and JavaScript. All of my sites are fully accessible and responsive to ensure the same experience for every user (visually impaired users, color blindness) on every device (mobile, tablet, desktop, etc.) using Bootstrap. The sites below are categorized by live sites (deployed to their own URLs) and other projects with GIFs to show functionality and looks of the applications.
+          </p>
         </div>
+
+
+        <!-- page navigation -->
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#background">background information</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">live projects</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#btfranzen">btfranzen.com</a>
+              <a class="dropdown-item" href="#triggeraware">triggeraware.com</a>
+              <a class="dropdown-item" href="#40northography">40northography.com</a>
+              <a class="dropdown-item" href="#piratefabricator">piratefabricator.com</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">other projects</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#cargoValidator">cargo validator</a>
+              <a class="dropdown-item" href="#vueToDo">vue to-do list</a>
+              <a class="dropdown-item" href="#nasaAPI">NASA API</a>
+              <a class="dropdown-item" href="#siteFromScreenshot">site from screenshot</a>
+            </div>
+          </li>
+
+        </ul><br />
+
+
+        <h4><B>live projects</B></h4>
+
+          <div class="flex-container">
+
+          <!-- btfranzen.com -->
+            <div id="btfranzen" class="card text-center">
+              <div class="card-header">
+                btfranzen.com
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootrap" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-digital-ocean" aria-hidden=true role="img" style="color:#216CF6;"></i>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+
+                    </div>
+                  </div>
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-text">
+                        <div class="card-body">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            (this site) - this is a single page application (SPA) that i created as a personal portfolio. this SPA utilizes vue router, custom components, as well as javascript, HTML, CSS, bootstrap, and expressjs.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body -->
+              <div class="card-footer">
+                <a href="https://btfranzen.com" class="btn btn-outline-info" target="_blank">www.btfranzen.com</a>
+                <a href="https://github.com/bfranzen19/portfolioSPA" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>
+            </div>  <!-- z card text-center -->
+
+          <br/><br/><br/><br/>
+          <!-- TriggerAware -->
+            <div id="triggeraware" class="card text-center">
+              <div class="card-header">
+                TriggerAware
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://www.worksonarm.com/wp-content/uploads/2017/03/mongodb-logo-1.png" alt="mongoDB" aria-hidden=true role="img"/>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootstrap" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-digital-ocean" aria-hidden=true role="img" style="color:#216CF6;"></i>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/2fPijmIZaIeLnVzpTK" frameBorder="1" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            this database allows you to search by tv/movie title or trigger type to ascertain whether or not there is a risk for you or another survivor to be triggered. users can also fill out a form to recommend triggering scenes to add to the database. this application was built as my final project at CodeCraft and was built using web scraping (cheerio and request), javascript, mongoDB (using mongoose to validate data), express, fuse.js (fuzzy search JS library), bootstrap 4, CSS, HTML, bcrypt for authentication to login and verify the recommended scenes from users.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://triggeraware.com" class="btn btn-outline-info" target="_blank">www.triggeraware.com</a>
+                <a href="https://github.com/bfranzen19/triggerAware" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- z triggerAware -->
+
+          <br/><br/><br/><br/>
+          <!-- 40northography -->
+            <div id="40northography" class="card text-center">
+              <div class="card-header">
+                40northography
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://www.worksonarm.com/wp-content/uploads/2017/03/mongodb-logo-1.png" alt="mongoDB" aria-hidden=true role="img"/>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootstrap" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-digital-ocean" aria-hidden=true role="img" style="color:#216CF6;"></i>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/8754kgtpeTkE7aFioH" frameBorder="1" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            i created this site, originally, as a photography portfolio but then utilized it as a way of allowing people to follow me on a month-long european backpacking trip to 13 different countries (if you count the freetown christiania in copenhagen) without needing to have membership to any social media. it allowed friends and family to know that we were safe, see some pictures, see maps of where we explored in each location (using my GPS watch), and hear a daily paragraph about our travels. it also allowed me to continue coding, maintain a website, and showcase photographs.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://40northography.com" class="btn btn-outline-info" target="_blank">www.40northography.com</a>
+                <a href="https://github.com/bfranzen19/40northography" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- z 40northography -->
+
+          <br/><br/><br/><br/>
+          <!-- piratefabricator -->
+            <div id="piratefabricator" class="card text-center">
+              <div class="card-header">
+                pirate fabricator
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootstrap" aria-hidden=true role="img"/>
+                        <img src="https://www.freepnglogos.com/uploads/photoshop-png-logo/photoshop-cc-splash-png-logo-3.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-digital-ocean" aria-hidden=true role="img" style="color:#216CF6;"></i>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <img src="/img/pirateFab.jpg" id="pirateFabImg"/>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            this is a simple landing page for a client who is a welder and carpenter. i designed and created the logo using adobe photoshop.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://piratefabricator.com" class="btn btn-outline-info" target="_blank">www.piratefabricator.com</a>
+                <a href="https://github.com/bfranzen19/piratefabricator" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- z piratefabricator -->
+
+
+          </div>  <!-- z flex-container -->
+
+          <br/><br/><br/><br/>
+
+          <!-- ST other projects -->
+          <h4 id="otherProjects"><B>other projects</B></h4><br/>
+
+          <div class="flex-container">
+
+          <!-- cargo validator-->
+            <div id="cargoValidator" class="card text-center">
+              <div class="card-header">
+                cargo validator
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://www.worksonarm.com/wp-content/uploads/2017/03/mongodb-logo-1.png" alt="mongoDB" aria-hidden=true role="img"/>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootstrap" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/1kTO0C5WaImdGDjHIo" frameBorder="1" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            a simple project for my full-stack web development course utilizing vue and practicing sending data from the front-end to the backend and validating data.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://github.com/bfranzen19/roadtripValidator" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- z cargo validator -->
+
+          <br/><br/><br/><br/>
+
+          <!-- vue to-do list -->
+            <div id="vueToDo" class="card text-center">
+              <div class="card-header">
+                vue to-do
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://www.worksonarm.com/wp-content/uploads/2017/03/mongodb-logo-1.png" alt="mongoDB" aria-hidden=true role="img"/>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-vuejs" aria-hidden=true role="img" style="color:#64B587;"></i>
+                        <img src="http://www.websnube.com/wp-content/uploads/2016/07/jquery-icon.png" alt="photoshop" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <img src="https://cdn-images-1.medium.com/max/1024/1*9HanDsRU11ZMsgDGJwN96w.png" alt="bootstrap" aria-hidden=true role="img"/>
+                        <span>|</span>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/623JY9PcHykbinyaXp" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            a project from my full-stack web development course used to practice creating a CRUD to-do list using mongoDB, mongoose, and vue.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://github.com/bfranzen19/roadtripValidator" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- vue to-do list -->
+
+          <br/><br/><br/><br/>
+
+          <!-- nasa api -->
+            <div id="nasaAPI" class="card text-center">
+              <div class="card-header">
+                NASA API
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <img src="https://images.siftery.com/image/upload/v1497938494/v2/p/products/prAFdtY4mTx63b.png" alt="express.js" aria-hidden=true role="img"/>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <i class="fab fa-npm" aria-hidden=true role="img" style="color:#B23230;"></i>
+                        <span>|</span>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/YiUFAJbygx5r7q6T58" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            a project for my full-stack web development course practicing sending, receiving, and displaying request to NASA's API. this app returns all of the objects deemed within dangerous range of earth.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://github.com/bfranzen19/nasaII" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- nasa api -->
+
+          <br/><br/><br/><br/>
+
+          <!-- site from screenshot -->
+            <div id="siteFromScreenshot" class="card text-center">
+              <div class="card-header">
+                site from screenshot
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-body icons">
+                        <i class="fab fa-js-square" aria-hidden=true role="img" style="color:#EDDA68;"></i>
+                        <i class="fab fa-css3" aria-hidden=true role="img" style="color:#2852DC;"></i>
+                        <i class="fab fa-html5" aria-hidden=true role="img" style="color:#D45532;"></i>
+                        <span>|</span>
+                        <i class="fab fa-node" aria-hidden=true role="img" style="color:#2F6B1C;"></i>
+                        <span>|</span>
+                        <i class="fab fa-accessible-icon" aria-hidden=true role="img" style="color:;"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden=true role="img" style="color:;"></i>
+                      </div>  <!-- z icons -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+                <div class="row">
+                  <div class="col-sm-6 gif">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text">
+                          <iframe id="triggerAwareGIF" src="https://giphy.com/embed/39vd2KpH7zjMx1vHzb" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                        </div>  <!-- z card-text -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                  <div class="col-sm-6 desc">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-text projectDesc">
+                          <p>
+                            an early project for my full-stack web development course practicing recreating a popular site from a screen-shot. this example replicates my instagram page.
+                          </p>
+                        </div>  <!-- z projectDesc -->
+                      </div>  <!-- z card-body -->
+                    </div>  <!-- z card -->
+                  </div>  <!-- z col -->
+                </div>  <!-- z row -->
+              </div>  <!-- z card-body-->
+              <div class="card-footer">
+                <a href="https://github.com/bfranzen19/site-from-screenshot" class="btn btn-outline-dark" target="_blank">see the code on <i class="fab fa-github"></i></a>
+                <a href="#" class="btn btn-outline-primary">back to the top</a>
+              </div>  <!-- z card-footer-->
+            </div>  <!-- site from screenshot -->
+
+
+          </div>  <!-- z other projects -->
+        </div>  <!-- z webDev -->
+
+        <br/><br/><br/><br/>
+
+
+
+
+
+
+        <!-- ST background section -->
+        <div id="background" class="flex-container">
+          <div class="jumbotron">
+            <!-- <div class="container"> -->
+              <h4><b>background</b></h4>
+
+              <p  id="pushDown">
+                after my time in the army, i started working in GIS and satellite imagery which pushed me to further consider a career change into web and software development. codecraft school of technology made this career change a reality for me.
+              </p>
+
+              <p id="pushDown">
+                at codecraft, i studied the javascript MEVN stack which includes mongoDB and mongoose, expressjs, vuejs, and nodejs. i also became proficient in using BASH/command line, git, github, HTML, CSS, jQuery, bootstrap, object oriented programming, and writing both front and backend code.
+              </p>
+
+              <p id="pushDown">
+                in addition to my time at codecraft, i have also taken classes in python, java, object oriented programming, software development lifecycle (SDLC), and javascript-based web mapping at the university of denver in denver, colorado.
+              </p>
+
+              <p id="pushDown">
+                please take a look at my github account to see what i've been working on and my progress throughout my time as a student at codecraft.
+              </p>
+            <!-- </div> -->
+          </div>
+          <a href="#" class="btn btn-outline-primary">back to the top</a>
+        </div>
+
 
     </div>
   </div>
-</div>
+</div>  <!-- z about -->

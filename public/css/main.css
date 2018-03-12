@@ -1,6 +1,28 @@
+@media screen and (max-width: 1000px) {
+  div.card-text.projectDesc {
+    height: auto;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  div.card-text.projectDesc {
+    height: auto;
+    font-size: 0.85rem;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
 body {
   background-color: ghostwhite;
 }
+
+/* .container {
+  width: 100%;
+} */
 
 #brand {
   font-weight: bold;
@@ -9,7 +31,16 @@ body {
   letter-spacing: 1px;
   font-size: 24px;
   font-family: 'Alfa Slab One', cursive;
-  margin-left: 10px;
+  /* margin-left: 1rem; */
+}
+
+#brandImg {
+  margin-left: 0;
+}
+
+button.navbar-toggler {
+  display: inline;
+  text-align: right;
 }
 
 h1 {
@@ -19,7 +50,7 @@ h1 {
 
 .about {
   font-family: 'Architects Daughter', cursive;
-  margin: 1rem 5rem 5rem 5rem;
+  margin: 1rem auto 5rem 2rem;
   font-size: 1.25rem;
   width: 100%;
 }
@@ -63,8 +94,17 @@ ul {
   padding: 0 2.5rem 0 0.5rem;
 }
 
+.nav-item a {
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav-item a:hover {
+  text-shadow: 1px 1px 2px blue;
+}
+
 #pushDown {
   margin-top: 2rem;
+  padding: 0;
 }
 
 .center {
@@ -93,6 +133,9 @@ ul {
 
 .webDev {
   font-size: 1.5rem
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 98%;
 }
 
 .carouselImg {
@@ -109,7 +152,147 @@ ul {
   margin: 0 auto 5px auto;
 }
 
+#navbarNav {
+  width: 100% !important;
+}
+
 #carouselExampleIndicators {
   float: none;
   margin: 0 auto;
+}
+
+iframe {
+  display: inline;
+  border: 1px solid lightgray;
+  width: 50%;
+  height: 100%;
+}
+
+#pirateFabImg {
+  width: 95%;
+  height: 98%;
+}
+
+#triggerAwareGIF {
+  padding: .1rem;
+  height: 22rem;
+  width: 100%;
+  display: block;
+  flex-shrink: 0;
+  background-color: lightgray;
+  /* box-shadow: 1px 1px 0.5px black; */
+}
+
+#triggerAwareGIF > a {
+  padding: 1rem;
+  height: 22rem;
+}
+
+.projectContainer {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+}
+
+.projectDesc {
+  font-size: 1.12rem;
+  height: 22rem;
+  flex-grow: 8;
+}
+
+/* card container */
+.flex-container {
+  width: 98%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-footer > a {
+  font-weight: bold;
+}
+
+div.card-header {
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 1px gray;
+  font-size: 1.48rem;
+}
+
+.icons {
+  padding: 0;
+  display: inline-block;
+  margin: auto;
+  font-size: 3rem;
+}
+
+div.icons img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 0.5rem;
+  color: gray;
+}
+
+div.card-body {
+  padding: 0;
+}
+
+div.card-text.projectDesc > p {
+  margin: 0.22rem 0.5rem auto 0.5rem;
+}
+
+div.col-sm-6.gif {
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+div.col-sm-6.desc {
+  padding-left: 0;
+}
+
+div#background.flex-container {
+  margin: auto;
+  display: block;
+  padding: 1rem;
+  padding-right: 2rem;
+  width: 85%;
+}
+
+#background {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 4rem;
+  padding: 0;
+  width: 100%;
+}
+
+div.jumbotron.jumbotron-fluid {
+  padding: 1rem 0;
+  display: block;
+  margin: auto;
+  border-radius: 2%;
+}
+
+h4 {
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+a.nav-link {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+a.dropdown-item {
+  text-shadow: none;
+}
+
+a.dropdown-item:hover {
+  text-shadow: 0.5px 0.5px 1px gray;
+  color: black;
+}
+
+li.nav-item {
+  text-shadow: none;
+  color: blue;
 }
