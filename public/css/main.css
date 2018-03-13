@@ -20,10 +20,6 @@ body {
   background-color: ghostwhite;
 }
 
-/* .container {
-  width: 100%;
-} */
-
 #brand {
   font-weight: bold;
   color: #0151AC;
@@ -31,7 +27,6 @@ body {
   letter-spacing: 1px;
   font-size: 24px;
   font-family: 'Alfa Slab One', cursive;
-  /* margin-left: 1rem; */
 }
 
 #brandImg {
@@ -295,4 +290,12 @@ a.dropdown-item:hover {
 li.nav-item {
   text-shadow: none;
   color: blue;
+}
+
+.rightMargin {
+  margin-right: 3rem;
+}
+
+.bottomMargin {
+  margin-bottom: 1rem;
 }

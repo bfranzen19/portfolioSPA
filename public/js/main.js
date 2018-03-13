@@ -44,7 +44,7 @@ var myRouter = new VueRouter({
 
               <div class="container" id="welcome">
                 <div class="row col-xs-10">
-                  welcome to my portfolio site! feel free to add me on social media, contact me, and/or see what i have been working on recently via my github account.
+                  welcome to my portfolio site! feel free to add me on social media, contact me, and/or see what i have been working on recently via my github account. 
                 </div>
               </div>
             </div>`,
