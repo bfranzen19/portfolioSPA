@@ -27,13 +27,13 @@ catch(e){
     console.log(e)
     console.log('could not start HTTPS server')
     var httpServer = HTTP.createServer(app)
-/*  production  */
+///*  production  */
     httpServer.listen(80)
-/*  dev & testing */
+///*  dev & testing */
     // httpServer.listen(8080)
 }
 
-// /* old */
+///* old */
 // app.listen(80, function() {
 //   console.log('running on 8080')
 // })

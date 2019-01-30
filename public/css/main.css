@@ -74,6 +74,20 @@ ul {
   font-size: 5rem;
 }
 
+/* #newHeading {
+  padding-top: 0;
+  margin: 0 auto 20px auto;
+  font-size: 4.5rem;
+  color: #0055FF;
+  text-shadow: 2px 2px #FBF31C, 3px 3px .5px gray;
+}
+
+.automattic {
+  margin: 1rem auto 5rem 2rem;
+  font-size: 1rem;
+  width: 100%;
+} */
+
 #pushLeft {
   margin-left: 3rem;
   padding-top: 2rem;
@@ -298,4 +312,58 @@ li.nav-item {
 
 .bottomMargin {
   margin-bottom: 1rem;
+}
+
+#newHeading {
+  padding-top: 0;
+  margin: 0 auto 20px auto;
+  font-size: 4.25rem;
+  color: #0055FF;
+  text-shadow: 2px 2px #FBF31C, 3px 3px .5px gray;
+}
+
+.automattic {
+  /* font-family: open-dyslexic; */
+  margin: 1rem auto 5rem 2rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.automattic h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  margin: 0 1rem 0 1rem;
+}
+
+.column {
+  flex: 50%;
+  padding: 1rem 1rem;
+}
+
+.column li {
+  margin-bottom: 1rem;
+  list-style: square;
+}
+
+.column h3 {
+  text-align: center;
+  text-shadow: .5px .5px gray;
+  margin-bottom: 1rem;
+}
+
+.automattic h2 {
+  font-size: 1.5rem;
+}
+
+.automattic h3 {
+  font-size: 1.25rem;
+}
+
+.projects ul {
+  margin: 1rem;
 }

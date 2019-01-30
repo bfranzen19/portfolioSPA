@@ -17,6 +17,16 @@ Vue.component('my-heading', {
   `
 })
 
+Vue.component('new-heading', {
+  template:`
+    <div class="container-fluid">
+      <div class="row col-xs-12">
+        <h1 class="text-center" id="newHeading"> bt franzen </h1>
+      </div>
+    </div>
+  `
+})
+
 Vue.component('carousel-img', {
   template:`
   <div class="carousel-item">
@@ -126,7 +136,17 @@ var myRouter = new VueRouter({
         })
       }
     },
-
+    {
+      path: '/Automattic',
+      component: function(resolve,reject) {
+        $.get('/partials/automattic.html', function(htmlFromServer) {
+          var newComp = {
+            template: htmlFromServer,
+          }
+          resolve(newComp)
+        })
+      }
+    },
   ]
 })
 
